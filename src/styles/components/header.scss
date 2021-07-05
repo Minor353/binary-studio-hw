@@ -1,0 +1,30 @@
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(223, 230, 232, 0.4);
+    padding: 16px 0;
+    position: fixed;
+    z-index: 9;
+    top: -80px;
+    left: 0;
+    right: 0;
+    animation: 1s ease-in 0s move_header;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+@keyframes move_header { 
+    0% { 
+        top: -80px;
+    } 
+    100% { 
+        top: 0px; 
+    }
+}

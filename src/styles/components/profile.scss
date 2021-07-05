@@ -1,0 +1,109 @@
+.profile {
+    margin-left: 26px;
+}
+
+.profile__logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFC2EA;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(45, 59, 67, 0.9);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: #ffb2e5;
+    }
+}
+
+
+.profile__label {
+    position: relative;
+    display: block;
+}
+
+
+.profile__menu {
+    position: absolute;
+    width: max-content;
+    min-width: 214px;
+    top: 32px;
+    right: 0;
+    background: #FFFFFF;
+    border: 1px solid #DFE6E8;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 32px rgba(223, 230, 232, 0.4);
+    border-radius: 12px 0px 12px 12px;
+    padding: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-top-left-radius: 5px;
+        background: #FFFFFF;
+        border-left: 1px solid #DFE6E8;
+        border-top: 1px solid #DFE6E8;
+        position: absolute;
+        top: -11px;
+        right: 3.4px;
+        transform:rotate(45deg);
+    }
+}
+
+.profile__menu-item {
+    list-style-type: none;
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+     a {
+         position: relative;
+        display: block;
+        padding: 8px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: rgba(45, 59, 67, 0.7);
+        transition: 0.3s;
+
+        &:hover {
+            background-color: rgba(223, 230, 232, 0.4);
+        }
+    }
+
+    .profile__menu-name {
+        color: #2D3B43;
+        font-weight: 500;
+    }
+}
+
+.profile__menu-item_separator:after {
+    content: '';
+    display: block;
+    margin: 16px 24px 16px;
+    height: 1px;
+    background: #DFE6E8;
+}
+
+.profile__checkbox:checked+.profile__menu {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+
+.profile__checkbox {
+    display: none;
+}

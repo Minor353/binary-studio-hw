@@ -1,0 +1,23 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    padding: 0 160px;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .wrapper {
+        padding: 0 100px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+}
